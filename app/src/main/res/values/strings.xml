@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">MyWine</string>
+    <string name="btn_read">PESQUISAR</string>
+    <string name="btn_create_update">NOVO OU ALTERAR</string>
+    <string name="btn_delete">DELETAR</string>
+    <string name="btn_options">OPÇÕES</string>
+    <string name="btn_about">SOBRE</string>
+    <string name="btn_exit">SAIR</string>
+    <string name="btn_image">IMAGEM</string>
+    <string name="password">PASSWORD</string>
+    <string name="Coop1">Matzeck Corporation</string>
+    <string name="Coop1_link">https://www.matzeck.eng.br/</string>
+    <string name="Coop2">Lucas Fernando Frighetto</string>
+    <string name="Coop2_link">https://github.com/Frighetto</string>
+    <string name="btn_menu_hamburger">☰</string>
+    <string name="text_barcode">CODIGO DE BARRAS</string>
+    <string name="text_country">PAÍS</string>
+    <string name="text_producer">PRODUTOR</string>
+    <string name="text_type">TIPO</string>
+    <string name="text_grape">UVA</string>
+    <string name="text_vintage">SAFRA</string>
+    <string name="text_body">CORPO</string>
+    <string name="text_alcoholic_graduation">% ALCOOL</string>
+    <string name="text_description">DESCRIÇÃO</string>
+    <string name="btn_show">$</string>
+    <string name="text_image_dir">DIRETÓRIO DAS IMAGENS</string>
+    <string name="text_secret">SENHA $</string>
+    <string name="text_led_link">LED LINK</string>
+    <string name="text_horizontal_grids">GRADES HORIZONTAL</string>
+    <string name="text_vertical_grids">GRADES VERTICAL</string>
+    <string name="text_columns">COLUNAS</string>
+    <string name="text_lines">LINHAS</string>
+    <string name="btn_save_backup">SALVAR BACKUP</string>
+    <string name="btn_load_backup">CARREGAR BACKUP</string>
+    <string name="btn_default_config">CONFIGURAÇÃO DE FÁBRICA</string>
+    <string name="btn_serpentine_led">LED SERPENTINA</string>
+    <string name="btn_save">SALVAR</string>
+    <string name="hint_dir">/</string>
+    <string name="hint_dot">.</string>
+    <string name="hint_secret">***</string>
+    <string name="hint_led_link">http://127.0.0.1:80/</string>
+    <string name="hint_leds">...</string>
+
+</resources>
