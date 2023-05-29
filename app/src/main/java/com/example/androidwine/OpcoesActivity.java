@@ -110,13 +110,43 @@ public class OpcoesActivity extends AppCompatActivity {
 
             myAwesomeTextView = findViewById(R.id.EditText_columns);
             save_config(appDatabase, "columns", myAwesomeTextView.getText().toString());
+            int columns = Integer.parseInt(myAwesomeTextView.getText().toString());
             myAwesomeTextView = findViewById(R.id.EditText_lines);
             save_config(appDatabase, "lines", myAwesomeTextView.getText().toString());
+            int lines = Integer.parseInt(myAwesomeTextView.getText().toString());
 
             myAwesomeTextView = findViewById(R.id.EditText_horizontal_grids);
             save_config(appDatabase, "horizontal_grids", myAwesomeTextView.getText().toString());
+            int horizontal_grids = Integer.parseInt(myAwesomeTextView.getText().toString());
             myAwesomeTextView = findViewById(R.id.EditText_vertical_grids);
             save_config(appDatabase, "vertical_grids", myAwesomeTextView.getText().toString());
+            int vertical_grids = Integer.parseInt(myAwesomeTextView.getText().toString());
+            List<Wine> wines = appDatabase.wineDao().getAll();
+
+            for(Wine wine: wines){
+                appDatabase.wineDao().delete(wine);
+                if(columns * horizontal_grids > wine.getColumn() && lines * vertical_grids > wine.getLine()){
+                    appDatabase.wineDao().delete(wine);
+                }
+            }
+
+            for(int horizontalIndex = 0; horizontalIndex <= horizontal_grids; horizontalIndex = horizontalIndex + 1){
+                for(int verticalIndex = 0; verticalIndex <= vertical_grids; verticalIndex = verticalIndex + 1){
+                    for (int column = 1; column <= matrix.getColumns(); column = column + 1){
+                        for(int line = 1; line <= matrix.getLines(); line = line + 1){
+                            int current_column = column + horizontalIndex * matrix.getColumns();
+                            int current_line = line + verticalIndex * matrix.getLines();
+                            if(appDatabase.wineDao().findByPrimaryKey(current_column, current_line) == null) {
+                                Wine wine = new Wine();
+                                wine.setColumn(current_column);
+                                wine.setLine(current_line);
+                                appDatabase.wineDao().insertAll(wine);
+                            }
+                        }
+                    }
+                }
+            }
+
 
             myAwesomeTextView = findViewById(R.id.EditText_secret);
             save_config(appDatabase, "price_password", myAwesomeTextView.getText().toString());
@@ -357,7 +387,7 @@ public class OpcoesActivity extends AppCompatActivity {
             save_config(appDatabase, "lines", "8");
 
             save_config(appDatabase, "horizontal_grids", "4");
-            save_config(appDatabase, "vertical_grids", "2");
+            save_config(appDatabase, "vertical_grids", "4");
 
             save_config(appDatabase, "ledlink", "http://127.0.0.1:80/");
 

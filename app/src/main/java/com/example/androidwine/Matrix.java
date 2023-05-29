@@ -19,7 +19,7 @@ public class Matrix {
     }
 
     public void left(){
-        horizontal_index = horizontal_index == 1 ? horizontal_grids : horizontal_index - 1;
+        horizontal_index = horizontal_index == horizontal_grids ? 1 : horizontal_index + 1;
     }
 
     public void up(){
@@ -27,7 +27,7 @@ public class Matrix {
     }
 
     public void right(){
-        horizontal_index = horizontal_index == horizontal_grids ? 1 : horizontal_index + 1;
+        horizontal_index = horizontal_index == 1 ? horizontal_grids : horizontal_index - 1;
     }
 
     public void down(){

@@ -52,15 +52,18 @@ public class WineHouseActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+        TextView myAwesomeTextView = findViewById(R.id.EditText_price);
         Button btn_confirm = findViewById(R.id.Button_confirm);
         if(DataSingleton.getInstance().isMENU()) {
             btn_confirm.setText("LED");
         }
         if(DataSingleton.getInstance().isREMOVE()) {
             btn_confirm.setText("EXCLUIR");
+            myAwesomeTextView.setHint("PREÇO");
         }
         if(DataSingleton.getInstance().isADD()) {
             btn_confirm.setText("SALVAR");
+            myAwesomeTextView.setHint("PREÇO");
         }
 
         Context context = this;
@@ -660,58 +663,68 @@ public class WineHouseActivity extends AppCompatActivity {
         TextView myAwesomeTextView = findViewById(R.id.EditText_barcode);
         myAwesomeTextView.setText("");
         myAwesomeTextView.setEnabled(false);
+        myAwesomeTextView.setTextColor(Color.BLACK);
         Button btn = findViewById(R.id.Button_barcode);
         btn.setEnabled(enabled);
 
         myAwesomeTextView = findViewById(R.id.EditText_county);
         myAwesomeTextView.setText("");
         myAwesomeTextView.setEnabled(false);
+        myAwesomeTextView.setTextColor(Color.BLACK);
         btn = findViewById(R.id.Button_country);
         btn.setEnabled(enabled);
 
         myAwesomeTextView = findViewById(R.id.EditText_producer);
         myAwesomeTextView.setText("");
         myAwesomeTextView.setEnabled(false);
+        myAwesomeTextView.setTextColor(Color.BLACK);
         btn = findViewById(R.id.Button_producer);
         btn.setEnabled(enabled);
 
         myAwesomeTextView = findViewById(R.id.EditText_type);
         myAwesomeTextView.setText("");
         myAwesomeTextView.setEnabled(false);
+        myAwesomeTextView.setTextColor(Color.BLACK);
         btn = findViewById(R.id.Button_type);
         btn.setEnabled(enabled);
 
         myAwesomeTextView = findViewById(R.id.EditText_grape);
         myAwesomeTextView.setText("");
         myAwesomeTextView.setEnabled(false);
+        myAwesomeTextView.setTextColor(Color.BLACK);
         btn = findViewById(R.id.Button_grape);
         btn.setEnabled(enabled);
 
         myAwesomeTextView = findViewById(R.id.EditText_vintage);
         myAwesomeTextView.setText("");
         myAwesomeTextView.setEnabled(false);
+        myAwesomeTextView.setTextColor(Color.BLACK);
         btn = findViewById(R.id.Button_vintage);
         btn.setEnabled(enabled);
 
         myAwesomeTextView = findViewById(R.id.EditText_body);
         myAwesomeTextView.setText("");
         myAwesomeTextView.setEnabled(false);
+        myAwesomeTextView.setTextColor(Color.BLACK);
         btn = findViewById(R.id.Button_body);
         btn.setEnabled(enabled);
 
         myAwesomeTextView = findViewById(R.id.EditText_alcoholic_graduation);
         myAwesomeTextView.setText("");
         myAwesomeTextView.setEnabled(false);
+        myAwesomeTextView.setTextColor(Color.BLACK);
         btn = findViewById(R.id.Button_alcoholic_graduation);
         btn.setEnabled(enabled);
 
         myAwesomeTextView = findViewById(R.id.EditText_price);
         myAwesomeTextView.setText("");
         myAwesomeTextView.setEnabled(false);
+        myAwesomeTextView.setTextColor(Color.BLACK);
 
         myAwesomeTextView = findViewById(R.id.EditText_description);
         myAwesomeTextView.setText("");
         myAwesomeTextView.setEnabled(false);
+        myAwesomeTextView.setTextColor(Color.BLACK);
 
         ImageView imageView = findViewById(R.id.imageView);
         imageView.setImageBitmap(null);
@@ -734,10 +747,10 @@ public class WineHouseActivity extends AppCompatActivity {
 
     public void photo(View view) {
         String[] selectionOptions = new String[2];
-        selectionOptions[0] = "FILES";
+        selectionOptions[0] = "ARQUIVOS";
         selectionOptions[1] = "CAMERA";
         String title = "Chose";
-        String emptyItemTitle = "NONE";
+        String emptyItemTitle = "NENHUM";
         int initialSelection = 0;
         showSingleChoiceDialogWithNoneOption(title, selectionOptions, initialSelection, emptyItemTitle, IMAGE);
     }
@@ -1014,7 +1027,7 @@ public class WineHouseActivity extends AppCompatActivity {
                 ImageView newsImage = findViewById(R.id.imageView);
                 newsImage.setImageBitmap(null);
                 if(wine.getImage() != null) {
-                    Bitmap bitmap = BitmapFactory.decodeFile(IMAGE_DIR + current_position.column + " " + current_position.line + ".jpg");
+                    Bitmap bitmap = BitmapFactory.decodeFile(IMAGE_DIR + current_column() + " " + current_line() + ".jpg");
                     newsImage.setImageBitmap(bitmap);
                 }
                 newsImage.setClickable(enabled);
@@ -1083,6 +1096,7 @@ public class WineHouseActivity extends AppCompatActivity {
 
                 myAwesomeTextView = findViewById(R.id.EditText_description);
                 myAwesomeTextView.setText(wine.getDescription());
+                myAwesomeTextView.setEnabled(enabled);
             }
         };
         asyncTask.execute();
