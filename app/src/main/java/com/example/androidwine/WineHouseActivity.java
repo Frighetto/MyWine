@@ -42,6 +42,8 @@ import crud.entities.Led;
 import crud.entities.Opcao;
 import crud.entities.Wine;
 
+import static android.os.Environment.getExternalStorageDirectory;
+
 public class WineHouseActivity extends AppCompatActivity {
 
     @Override
@@ -73,7 +75,7 @@ public class WineHouseActivity extends AppCompatActivity {
             price_password = opcao_price_password.getValue();
 
             Opcao image_dir = appDatabase.opcaoDao().findById("image_dir");
-            IMAGE_DIR = image_dir.getValue();
+            IMAGE_DIR = getExternalStorageDirectory() + image_dir.getValue();
 
             Opcao opcao_columns = appDatabase.opcaoDao().findById("columns");
             Opcao opcao_lines = appDatabase.opcaoDao().findById("lines");

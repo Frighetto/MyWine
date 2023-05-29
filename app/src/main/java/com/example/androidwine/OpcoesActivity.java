@@ -19,9 +19,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import crud.AppDatabase;
-import crud.entities.Opcao;
 import crud.entities.Led;
+import crud.entities.Opcao;
 import crud.entities.Wine;
+
+import static android.os.Environment.getExternalStorageDirectory;
 
 public class OpcoesActivity extends AppCompatActivity {
 
@@ -182,7 +184,7 @@ public class OpcoesActivity extends AppCompatActivity {
             List<Wine> wineList = appDatabase.wineDao().getAll();
             String backupContent = ledList.toString() + opcaoList.toString() + wineList.toString();
             Opcao image_dir = appDatabase.opcaoDao().findById("image_dir");
-            File appDir = new File(image_dir.getValue());
+            File appDir = new File(getExternalStorageDirectory() + image_dir.getValue());
             if (!appDir.exists()) {
                 appDir.mkdir();
             }
@@ -204,7 +206,7 @@ public class OpcoesActivity extends AppCompatActivity {
         AsyncTask.execute(() -> {
             AppDatabase appDatabase = AppDatabase.getAppDatabase(context);
             Opcao image_dir = appDatabase.opcaoDao().findById("image_dir");
-            File appDir = new File(image_dir.getValue());
+            File appDir = new File(getExternalStorageDirectory() + image_dir.getValue());
             if (!appDir.exists()) {
                 appDir.mkdir();
             }
@@ -381,7 +383,7 @@ public class OpcoesActivity extends AppCompatActivity {
 
             save_config(appDatabase, "price_password", "1234");
 
-            save_config(appDatabase, "image_dir", "/storage/emulated/0/Pictures/MyWine/");
+            save_config(appDatabase, "image_dir", "/Pictures/MyWine/");
 
             save_config(appDatabase, "columns", "4");
             save_config(appDatabase, "lines", "8");
