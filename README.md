@@ -33,3 +33,7 @@ On installation, seek for the hidden options to allow the installation.
 After installed, must allow camera and files, to allow, on Android, go to Settings >>> Applications, select MyWine then allow camera and files.These permission are needed to use barcode reader (camera), and save or load data (files).
 > **Note:** The options to allow camera and files may not appear during the installation or during the use of the app.
 
+## Configuration
+The app does not store the pictures, only the filepatch to the pictures, by default the pictures are set to the directory "/Pictures/MyWine/", all the other data of the app may be saved in the same directory "/Pictures/MyWine/", that data may have the name "backup.txt". The save or load of backup is manual.
+
+The leds are set by (column, line, led number), there is no user interface for set the leds, so you have to write by hand the text block that set the leds. In a future release there will be a user interface and support for multiple ports of leds and documentation about arduino.
