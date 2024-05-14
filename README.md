@@ -10,11 +10,12 @@ OpenJDK 64-Bit Server VM (build 25.412-b08, mixed mode)
 
 On Android Studio Settings make sure that java 1.8 openjdk is selected:
 Settings >>> (Build, Execution, Deployment) >>> Build Tools >>> Gradle
-Select the Gradle Project "MyWine" and set Gradle JDK: java-1.8.0-openjdk, then synchronise project with gradle files
+Select the Gradle Project "MyWine" and set Gradle JDK: java-1.8.0-openjdk, then synchronise project with gradle files.
 
 Build the project to generate the .apk file which is the installer of the app, before build, set build variant to "debug", the build variant "release" is not working.
-The .apk are generated in the folder MyWine/app/build/outputs/apk/debug/
-The default name of the .apk is app-debug.apk, it is recommended to change the name of app-debug.apk to MyWine.apk
+The .apk are generated in the folder "MyWine/app/build/outputs/apk/debug/".
+
+The default name of the .apk is "app-debug.apk", it is recommended to change the name of "app-debug.apk" to "MyWine.apk".
 
 
 ### Installation and Execution
