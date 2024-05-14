@@ -30,8 +30,6 @@ The default name of the .apk is "app-debug.apk", it is recommended to change the
 
 On installation, seek for the hidden options to allow the installation.
 
-After installed, must allow camera and files, to allow, on Android, go to Settings >>> Applications, select MyWine then allow camera and files.
+After installed, must allow camera and files, to allow, on Android, go to Settings >>> Applications, select MyWine then allow camera and files.These permission are needed to use barcode reader (camera), and save or load data (files).
+> **Note:** The options to allow camera and files may not appear during the installation or during the use of the app.
 
-These permission are needed to use barcode reader (camera), and save or load data (files).
-
-The options to allow camera and files may not appear during the installation or during the use of the app.
