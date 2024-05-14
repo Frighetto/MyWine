@@ -6,7 +6,7 @@
 
 [O instalador MyWine](https://github.com/Frighetto/MyWine/raw/master/app/build/outputs/apk/debug/MyWine.apk) pode ser baixado pelo link:
 
-[https://github.com/Frighetto/MyWine/raw/master/app/build/outputs/apk/debug/MyWine.apk](https://github.com/Frighetto/MyWine/raw/master/app/ build/saídas/apk/debug/MyWine.apk)
+[https://github.com/Frighetto/MyWine/raw/master/app/build/outputs/apk/debug/MyWine.apk](https://github.com/Frighetto/MyWine/raw/master/app/build/saídas/apk/debug/MyWine.apk)
 
 Na instalação, procure as opções ocultas para permitir a instalação.
 
