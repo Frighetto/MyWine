@@ -1,3 +1,6 @@
+<p align="center">  
+  <img src="https://github.com/Frighetto/MyWine/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" alt="MyWine"><br/>  
+</p>
 ## Technical Specifications for developers
 
 java -version
