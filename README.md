@@ -14,6 +14,9 @@ Depois de instalado, deve permitir câmera e arquivos, para permitir, no Android
 > **Observação:** As opções para permitir câmera e arquivos podem não aparecer durante a instalação ou durante o uso do aplicativo.
 
 
+https://github.com/Frighetto/MyWine/assets/43685374/bc89135b-c16f-487c-9f98-6e2d209cfb02
+
+
 ## Installation and Execution
 
 [The MyWine Installer](https://github.com/Frighetto/MyWine/raw/master/app/build/outputs/apk/debug/MyWine.apk) can be downloaded by the link: 
@@ -60,7 +63,6 @@ The default name of the .apk is "app-debug.apk", it is recommended to change the
 <p align="center">  
   <img src="https://github.com/Frighetto/MyWine/blob/master/images/sobre.png" alt="sobre"><br/>  
 </p>
-[![Watch the video](https://github.com/Frighetto/MyWine/blob/master/images/amostra.png)](https://github.com/Frighetto/MyWine/blob/master/video/MyWine.mp4)
 <p align="center">  
   <img src="https://github.com/Frighetto/MyWine/blob/master/images/VINHOS%20FRIGHETTO.jpg" alt="VINHOS FRIGHETTO"><br/>  
 </p>
