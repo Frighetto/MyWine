@@ -1,4 +1,4 @@
-### Technical Specifications for developers
+## Technical Specifications for developers
 
 java -version
 
@@ -18,7 +18,7 @@ The .apk are generated in the folder "MyWine/app/build/outputs/apk/debug/".
 The default name of the .apk is "app-debug.apk", it is recommended to change the name of "app-debug.apk" to "MyWine.apk".
 
 
-### Installation and Execution
+## Installation and Execution
 
 [The MyWine Installer](https://github.com/Frighetto/MyWine/raw/master/app/build/outputs/apk/debug/MyWine.apk) can be downloaded by the link: 
 
