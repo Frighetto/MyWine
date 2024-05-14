@@ -49,3 +49,16 @@ Build the project to generate the .apk file which is the installer of the app, b
 The .apk are generated in the folder "MyWine/app/build/outputs/apk/debug/".
 
 The default name of the .apk is "app-debug.apk", it is recommended to change the name of "app-debug.apk" to "MyWine.apk".
+
+<p align="center">  
+  <img src="https://github.com/Frighetto/MyWine/blob/images/amostra.png" alt="amostra"><br/>  
+</p>
+<p align="center">  
+  <img src="https://github.com/Frighetto/MyWine/blob/images/main.png" alt="main"><br/>  
+</p>
+<p align="center">  
+  <img src="https://github.com/Frighetto/MyWine/blob/images/sobre.png" alt="sobre"><br/>  
+</p>
+<p align="center">  
+  <img src="https://github.com/Frighetto/MyWine/blob/images/VINHOS FRIGHETTO.jpg" alt="VINHOS FRIGHETTO"><br/>  
+</p>
