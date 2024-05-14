@@ -60,6 +60,7 @@ The default name of the .apk is "app-debug.apk", it is recommended to change the
 <p align="center">  
   <img src="https://github.com/Frighetto/MyWine/blob/master/images/sobre.png" alt="sobre"><br/>  
 </p>
+[![Watch the video]](https://github.com/Frighetto/MyWine/blob/master/video/MyWine.mp4)
 <p align="center">  
   <img src="https://github.com/Frighetto/MyWine/blob/master/images/VINHOS%20FRIGHETTO.jpg" alt="VINHOS FRIGHETTO"><br/>  
 </p>
