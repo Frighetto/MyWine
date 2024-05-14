@@ -12,6 +12,8 @@
     <string name="Coop1_link">https://www.matzeck.eng.br/</string>
     <string name="Coop2">Lucas Fernando Frighetto</string>
     <string name="Coop2_link">https://frighetto.github.io/</string>
+    <string name="About">MyWine</string>
+    <string name="About_link">https://github.com/Frighetto/MyWine/</string>
     <string name="btn_menu_hamburger">☰</string>
     <string name="text_barcode">CODIGO DE BARRAS</string>
     <string name="text_country">PAÍS</string>
